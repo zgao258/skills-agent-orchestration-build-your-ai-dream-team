@@ -5,22 +5,22 @@ This document describes the custom agent team used to build Mona's Project Pulse
 ## Agents
 
 ### Orchestrator
-- **Model:** Claude 3.5 Sonnet (copilot)
+- **Model:** Claude Opus 4.7 (copilot)
 - **Responsibility:** Coordinates and delegates work to Planner, Coder, and Designer agents. Breaks down complex requests into tasks, manages execution phases (parallel and sequential), ensures file scopes don't overlap, and verifies the integrated result.
 - **Definition:** [.github/agents/orchestrator.agent.md](.github/agents/orchestrator.agent.md)
 
 ### Planner
-- **Model:** Claude 3.5 Sonnet (copilot)
+- **Model:** Claude Opus 4.7 (copilot)
 - **Responsibility:** Creates detailed implementation plans by researching the codebase, documentation, dependencies, and edge cases. Produces ordered implementation steps, file assignments, dependency analysis, and identifies work that can run in parallel.
 - **Definition:** [.github/agents/planner.agent.md](.github/agents/planner.agent.md)
 
 ### Coder
-- **Model:** GPT-4o (copilot)
+- **Model:** GPT-5.5 (copilot)
 - **Responsibility:** Implements code-oriented tasks, fixes bugs, and writes logic within assigned file scopes. Handles configuration files, launch setup, and ensures code is clear, testable, and follows repository patterns.
 - **Definition:** [.github/agents/coder.agent.md](.github/agents/coder.agent.md)
 
 ### Designer
-- **Model:** Gemini 1.5 Flash (copilot)
+- **Model:** Gemini 3.1 Pro (copilot)
 - **Responsibility:** Handles UI/UX, accessibility, information architecture, interaction flow, and visual design. Creates a polished dashboard with responsive layout, visual affordances, and clear typography.
 - **Definition:** [.github/agents/designer.agent.md](.github/agents/designer.agent.md)
 
